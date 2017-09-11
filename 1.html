@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation——动画</title>
+    <style>
+        .outer{
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            position: relative;
+        }
+        .sun{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            animation: sun 10s ease 1 forwards;
+        }
+        @keyframes sun{
+            0%{
+                background-color: red;
+                bottom: 0px;
+                right: 20px;
+            }
+            45%{
+                background-color: yellow;
+                bottom: 350px;
+                right: 20px;
+            }
+            80%{
+                background-color: green;
+                bottom: 350px;
+                right: 350px;
+            }
+            100%{
+                background-color: yellow;
+                bottom: 0px;
+                right: 350px;
+            }
+
+        }
+        .moon1{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            right: 20px;
+        }
+        .moon2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            right: 50px;
+        }
+        .moon{
+            animation: moon 3s ease 2 forwards;
+        }
+        @keyframes moon{
+
+
+
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="sun"></div>
+    <div class="moon">
+        <div class="moon1"></div>
+        <div class="moon2"></div>
+    </div>
+
+</div>
+</body>
+</html>
